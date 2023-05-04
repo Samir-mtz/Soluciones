@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Contacto | Soluciones MEJGAR </title>
+</head>
+<body>
+    <header>
+        <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li>
+                <li><a href="Invierte.html">Invierte</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.png" alt="logo" />
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li>
+                <li><a href="Invierte.html">Invierte</a></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1 class="movimiento-titulo">CONTACTO</h1>
+    </header>
+    <main>
+        <!-- <h2>Get In Touch</h2> -->
+        <div id="formcontacto">
+            <div id="text-contactform">
+                <h2>Llena el siguiente formulario</h2>
+                <p>Por favor selecciona el asunto segun corresponda.</p>
+                <p>Nos pondremos en contacto lo antes posible.</p>
+            </div>
+            <div id="form-content">
+                <h2>Formulario de Contacto</h2>
+                <form method="post" autocomplete="off">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="*" id="name" name="name" required>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" placeholder="*" id="lastname" name="lastname" required>
+                    <label for="phone">Telefono</label>
+                    <input type="number" placeholder="*" name="phone" id="phone" required>
+                    <label for="email">Correo</label>
+                    <input type="email" placeholder="*" name="email" id="email" required>
+                    
+                    <label for="kindofroom">Asunto</label>
+                    <select name="kindofroom" id="kindofroom">
+                        <option value="single">Atencion a clientes</option>
+                        <option value="double">Inversión</option>
+                        <option value="double">Acreditados</option>
+                    </select>                                                       
+                    
+                    <textarea name="mensaje" cols="25" rows="6" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Submit" id="send">
+                </form>
+            </div>
+            
+            <div id="metodos">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" alt="facebook" id="facebook"></a>
+                <a href="https://www.facebook.com/" target="_blank">@SolucionesMEJGAR</a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/instagram.png" alt="facebook" id="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank">@SolucionesMEJGAR</a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="facebook" id="facebook"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank">@SolucionesMEJGAR</a>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <img src="img/logo-fondo.jpg" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>©Copyright 2023 Soluciones Inmobiliarias MEJGAR</p>
+            <!-- <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a> -->
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

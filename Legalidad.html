@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Legalidad | Soluciones MEJGAR</title>
+</head>
+<body>
+    <header>
+         <!-- Menu -->
+         <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="https://samir-mtz.github.io/wdd230/Final%20proyect/">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.png" alt="logo" />
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Invierte.html">Invierte</a></li>     
+                <li><a href="Contacto.html">Contacto</a></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1 class="movimiento-titulo">LEGALIDAD</h1>
+    </header>
+    <main>
+        <div>
+            <div>
+                <h2 id="title-preguntas">Preguntas frecuentes</h2>
+                <div class="know-more">
+                    <div id="div-preguntas">
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans1')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans1">12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div>
+
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans2')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div>
+                        
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans3')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div>
+
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans4')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div id="liquidacion">
+                    <h2>Liquida tu credito</h2>
+                    <div id="credito">
+                        <div id="div-img-credito">
+                            <img src="img/banner.jpg" alt="imagen">
+                        </div>
+                        <div id="div-text-credito">
+                            <h3>Something to explain</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Temporibus, beatae. Commodi, nam saepe deserunt obcaecati 
+                                quo alias voluptate fuga natus neque consectetur, impedit 
+                                ipsam tempora magnam ab minus, cupiditate pariatur!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Temporibus, beatae. Commodi, nam saepe deserunt obcaecati 
+                                quo alias voluptate fuga natus neque consectetur, impedit
+                                ipsam tempora magnam ab minus, cupiditate pariatur!</p>
+                            <a href="Contacto.html" id="boton-liquidar">Liquidar</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo-fondo.jpg" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>©Copyright 2023 Soluciones Inmobiliarias MEJGAR</p>
+            <!-- <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a> -->
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        function hideShow(id){
+            let ans = document.getElementById(id).style.display;
+            // console.log(ans);
+            if(ans=="flex"){
+                document.getElementById(id).style.display="none";
+            }else{
+                document.getElementById(id).style.display="flex";
+            }
+        }
+    </script>
+</body>
+</html>
