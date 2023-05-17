@@ -708,7 +708,7 @@ footer {
 }
 .texto-negocio h3{
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 .texto-negocio p{
     text-align: justify;
@@ -744,10 +744,11 @@ footer {
 }
 .numeros-resultados h3{
     padding-top: 15px;
+    font-size: 22px;
 }
 .numeros-resultados h2{
     color:#000!important;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 #resultados{
     background-color: #003972;
@@ -755,8 +756,8 @@ footer {
 .numeros-resultados{
     text-align: center;
     padding: 15px;
-    width: 200px;
-    height: 100px;
+    width: 240px;
+    height: 130px;
     background-color: #fff;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
     margin-left: 20px;
