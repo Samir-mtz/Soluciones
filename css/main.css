@@ -316,7 +316,7 @@ main {
     height: 100%;
     display:grid;
     grid-template-columns:30% 70%;
-    grid-template-rows: 33% 33% auto;
+    grid-template-rows: 50% 50%;
     justify-content:center;
     align-items:center; 
 }
@@ -628,7 +628,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 #div-text-credito{
     width: 50%;
-    text-align: justify;
+    text-align: center;
 }
 #div-text-credito h3{
     font-size: 25px;
@@ -655,11 +655,16 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     border-radius: 5px;
     font-size: 20px;
     text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #boton-liquidar:hover{
     background-color: #e38585;
     transition-duration: 0.5s;
+}
+#liquida-desc{
+    margin-top: 20px;
 }
 /*end services*/
 /*footer*/
@@ -684,10 +689,9 @@ footer {
 }
 /*end footer*/
 /*Nosotros*/
-/* #cobertura{ */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),  url("../img/map.jpg"); */
-    /* background-size: cover;
-} */
+#cobertura{ 
+    background-color: rgb(244, 244, 244); 
+}
 .title-negocio{
     padding-top: 3%;
     color: #457B9D;
@@ -726,9 +730,9 @@ footer {
     text-align: center;
     padding:15px;
 }
-.mapas h3{
+/* .mapas h3{
     color:#fff;
-}
+} */
 .mapas iframe{
     border-radius: 15px;
     width: 300px;
