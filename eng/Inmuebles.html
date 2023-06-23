@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Legalidad | Soluciones MEJGAR</title>
+</head>
+<body>
+    <header>
+        <!-- Menu -->
+        <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li>
+                <li><a href="Invierte.html">Invierte</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.jpg" alt="logo" />
+            <ul>
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li>
+                <li><a href="Invierte.html">Invierte</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li id="eng-enlace"><a href="/">ESP</a><img src="/img/icons/mexico.jpg" alt="usa" width="22px"></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1 class="movimiento-titulo">INMUEBLES</h1>
+    </header>
+    <main>
+        <div>
+            <div id="contenedor-inmuebles">
+                <h2 id="title-preguntas">Consulta tu Credito</h2>
+                <div id="filtro-inmuebles">
+                    <select name="" id="filtro">
+                        <option value="Filtro">Filtrar por municipio</option>
+                        <option value="Ecatepec">Ecatepec</option>
+                        <option value="Tecamac">Tecamac</option>
+                    </select>
+                    <button id="borrarFiltro">Borrar filtro</button>
+                </div>
+                
+                <div id="lista-creditos">
+                    <ul id="listacreditos">
+                        <li class="Ecatepec credito">
+                            <h3>No. 10125-2023</h3>
+                            <div class="generales-creditos">
+                                <p>Entidad: Estado de México</p>
+                                <p>Municipio: Ecatepec</p>
+                                <p>C.P. : 55070</p>
+                                <a href="Contacto.html">Contactanos</a>
+                            </div>
+                        </li>
+                        <li class="Tecamac credito">
+                            <h3>No. 10125-2023</h3>
+                            <div class="generales-creditos">
+                                <p>Entidad: Estado de México</p>
+                                <p>Municipio: Tecamac</p>
+                                <p>C.P. : 55070</p>
+                                <a href="Contacto.html">Contactanos</a>
+                            </div>
+                        </li>
+                        <li class="Tecamac credito">
+                            <h3>No. 10125-2023</h3>
+                            <div class="generales-creditos">
+                                <p>Entidad: Estado de México</p>
+                                <p>Municipio: Tecamac</p>
+                                <p>C.P. : 55070</p>
+                                <a href="Contacto.html">Contactanos</a>
+                            </div>
+                        </li>
+                        <li class="Ecatepec credito">
+                            <h3>No. 10125-2023</h3>
+                            <div class="generales-creditos">
+                                <p>Entidad: Estado de México</p>
+                                <p>Municipio: Ecatepec</p>
+                                <p>C.P. : 55070</p>
+                                <a href="Contacto.html">Contactanos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.jpg" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>©Copyright 2023 Soluciones Inmobiliarias MEJGAR</p>
+            <!-- <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a> -->
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/inmobiliaria_mejgar/?fbclid=IwAR0FiiDsgBpUFSW52cyfeUbxVTbr53i-Ee2EuTK4NYseFJsk9Zw6_5hAgWk" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <!-- <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a> -->
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        var activities = document.getElementById("filtro");
+        activities.addEventListener("change", function() {
+            var option = activities[activities.selectedIndex].value;
+            let lista = document.querySelectorAll(".credito");
+            if(option !== "Filtro"){
+                lista.forEach(credito => {
+                if(credito.className !== option+" credito"){
+                    credito.style.display = "none";
+                }else{
+                    credito.style.display = "block";
+                }
+            });
+            }
+        });
+        let borrarFiltro = document.getElementById("borrarFiltro");
+        borrarFiltro.addEventListener("click",function(){
+            let lista = document.querySelectorAll(".credito");
+            lista.forEach(credito => {
+                credito.style.display = "block";
+            });
+            activities.options.item(0).selected = 'Filtro';
+        });
+    </script>
+</body>
+</html>

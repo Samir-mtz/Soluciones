@@ -85,6 +85,13 @@ main {
 }
 /*end main*/
 /*menu*/
+#eng-enlace{
+    font-size: 18px;
+}
+#eng-enlace a{
+    color:#3996d0;
+    font-weight: bold;
+}
 #menu{
     display:none;
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Legality | Soluciones MEJGAR</title>
+</head>
+<body>
+    <header>
+         <!-- Menu -->
+         <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Nosotros.html">About us</a></li>
+                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Invierte.html">Invest</a></li>     
+                <li><a href="Contacto.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.jpg" alt="logo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Nosotros.html">About us</a></li>
+                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Invierte.html">Invest</a></li>     
+                <li><a href="Contacto.html">Contact</a></li>
+                <li id="eng-enlace"><a href="/">ESP</a><img src="/img/icons/mexico.jpg" alt="usa" width="22px"></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1 class="movimiento-titulo">LEGALITY</h1>
+    </header>
+    <main>
+        <div>
+            <div>
+                <h2 id="title-preguntas">FAQ</h2>
+                <div class="know-more">
+                    <div id="div-preguntas">
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans1')"><span>What is an assignment of litigious rights?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans1">In Mexico, it is the acquisition of a right over an overdue mortgage loan, transmitted by a banking
+                                institution, guaranteed by a property, which is acquired at the end of the judicial process.</p>
+                        </div>
+
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans2')"><span>What is an adjudication?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans2">In Mexico, it is a domain right over a property acquired at the end of a judicial process, endorsed by aa
+                                judge and a public notary.</p>
+                        </div>
+                        
+                        <!-- <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans3')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div>
+
+                        <div class="preguntas">
+                            <div>
+                                <p class="pregunta" onclick="hideShow('ans4')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
+                            </div>
+                            <p class="answers" id="ans4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
+                        </div> -->
+                    </div>
+                    
+                    
+                </div>
+
+                <div id="liquidacion">
+                    <h2>Pay your credit</h2>
+                    <div id="credito">
+                        <div id="div-img-credito">
+                            <img src="img/banner.jpg" alt="imagen">
+                        </div>
+                        <div id="div-text-credito">
+                            <p>In our portfolio we manage assets from portfolio administrators such as Adamantine, Patrimonio,
+                                Secorse, Banorte, Monesis, pendulum, zendere and Fina</p>
+                            <p><b>Find your credit</b></p>
+                            <a href="Inmuebles.html" id="boton-liquidar">Buscar</a>
+                            
+                            <p id="liquida-desc">If your credit is not with us, click in “Pay credit” and fill the form and one of our assessors will be in
+                                touch with you</p>
+                            <a href="Contacto.html" id="boton-liquidar">Pay credit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.jpg" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>©Copyright 2023 Soluciones Inmobiliarias MEJGAR</p>
+            <!-- <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a> -->
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/inmobiliaria_mejgar/?fbclid=IwAR0FiiDsgBpUFSW52cyfeUbxVTbr53i-Ee2EuTK4NYseFJsk9Zw6_5hAgWk" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <!-- <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a> -->
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        function hideShow(id){
+            let ans = document.getElementById(id).style.display;
+            // console.log(ans);
+            if(ans=="flex"){
+                document.getElementById(id).style.display="none";
+            }else{
+                document.getElementById(id).style.display="flex";
+            }
+        }
+    </script>
+</body>
+</html>
