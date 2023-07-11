@@ -19,8 +19,8 @@
             <ul>
                 <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
                 <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
-                <li><a href="Legalidad.html">Legalidad</a></li>
+                <!-- <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li> -->
                 <li><a href="Invierte.html">Invierte</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
@@ -30,8 +30,8 @@
             <img src="img/logo.jpg" alt="logo" />
             <ul>
                 <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
-                <li><a href="Legalidad.html">Legalidad</a></li>
+                <!-- <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li> -->
                 <li><a href="Invierte.html">Invierte</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
                 <li id="eng-enlace"><a href="eng/">ENG</a><img src="img/icons/usa.jpg" alt="usa" width="22px"></li>
@@ -42,69 +42,91 @@
     </header>
     <main>
         <div id="description">
-            <h2>¿Quienes somos?</h2>
-            <p id="quien">Somos una empresa que se dedica a desarrollar negocios a través de la venta de cesiones de
-                derechos litigiosos, adjudicatarios y venta de inmuebles; trabajando directamente con las
-                instituciones financieras y empresas inmobiliarias.</p>
-            <h2>Filosofía</h2>
-            <div id="mision">
-                <img src="img/icons/mision.png" alt="mision">
-                <h3>Misión</h3>
-                <p>Brindar una experiencia de confianza cuidando el patrimonio de nuestros clientes, maximizando sus inversiones</p>
+            <div id="quienessomos">
+                <div id="textoquienes">
+                    <h2>¿Quienes somos?</h2>
+                    <p id="quien">Somos una empresa que se dedica a desarrollar negocios a través de la venta de cesiones de
+                        derechos litigiosos, adjudicatarios y venta de inmuebles; trabajando directamente con las
+                        instituciones financieras y empresas inmobiliarias.</p>
                 </div>
-            <div id="vision">
-                <img src="img/icons/vision.png" alt="vision">
-                <h3>Visión</h3>
-                <p>Ser la mejor opción para nuestros clientes, con las mejores propuestas de negocio en el mercado de inversión con rendimientos atractivos.</p>
+                <img src="img/inicio-us.jpg" alt="venta">
             </div>
+            
         </div>
-        <div id="valores">
-            <h2>Valores</h2>
-            <div>
-                <div class="valor">
-                    <img src="img/icons/transparencia.png" alt="Valor1">
-                    <h3>Transparencia</h3>
-                </div>
-                <div class="valor">
-                    <img src="img/icons/seguridad.png" alt="Valor2">
-                    <h3>Seguridad</h3>
-                </div>
-                <div class="valor">
-                    <img src="img/icons/handshake.png" alt="Valor3">
-                    <h3>Compromiso</h3>
-                </div>
-                <div class="valor">
-                    <img src="img/icons/integridad.png" alt="Valor4">
-                    <h3>Integridad</h3>
-                </div>
-                <div class="valor">
-                    <img src="img/icons/responsabilidad.png" alt="Valor4">
-                    <h3>Responsabilidad</h3>
+        <h2 class="negocio-title">Lineas de negocio</h2>
+        <div id="mosaico">
+            <div class="lineas-negocio linea-padding">
+                <div id="linea-recuperacion">
+                    <div>
+                        <h3>Servicio de recuperación</h3>
+                        <p>Recuperación de cartera de activos financieros en forma de cesiones de derechos litigiosos y adjudicatarios, llevamos el proceso judicial hasta el termino y tomamos la posesión de los inmuebles.</p>
+                    </div>
                 </div>
             </div>
+            <div class="lineas-negocio">
+                <div id="linea-administracion">
+                    <div>
+                        <h3>Administración y venta de activos</h3>
+                        <p>Evaluamos, armamos y compramos los mejores activos de las principales administradoras del país.</p>
+                    </div>
+                </div>
+                <div id="linea-inversion">
+                    <div>
+                        <h3>Inversión</h3>
+                        <p>Ofrecemos los mejores rendimientos y tiempo de retorno del mercado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lineas-negocio linea-padding">
+                <div id="linea-primaria">
+                    <div>
+                        <h3>Administración primaria</h3>
+                        <p>Recuperación de cartera masiva, valuación y adquisición de portafolio.</p>
+                    </div>
+                </div>
+                <div id="linea-comercializacion">
+                    <div>
+                        <h3>Comercialización de cartera</h3>
+                        <p>Ventas y servicios de bienes inmuebles adjudicados.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
-        <!-- <div id="about-us">
-            <div>
-                <h3>Nosotros Something else to talk</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi sapiente eum quae ipsam veritatis dicta unde quia minus esse voluptatibus nam repellendus tenetur, distinctio, iusto inventore, eligendi quo natus?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugit expedita optio ea nulla corporis architecto sequi vitae. Animi explicabo necessitatibus aliquam laborum, quasi nam accusamus facere id asperiores voluptatum!</p>
+        <div id="resultados">
                 
-                <div id="enlace-video">
-                    <a href="Invierte.html"><img src="img/icons/video.png" alt="icono video" id="icon-video"></a>
-                    <a href="Invierte.html">Mirar video</a>
+        </div>
+        <div id="numerostexto">
+            <h2 class="title-negocio">Resultados</h2>   
+            <div id="resultados-numeros">
+                <div class="numeros-resultados">
+                    <h3>Cesiones de derecho</h3>
+                    <h2 class="numAnim" data-val="200">00</h2>
+                </div>
+                <div class="numeros-resultados">
+                    <h3>Cesiones adjudicadas</h3>
+                    <h2 class="numAnim" data-val="125">00</h2>
+                </div>
+                <div class="numeros-resultados">
+                    <h3>Compraventas</h3>
+                    <h2 class="numAnim" data-val="80">00</h2>
+                </div>
+                <div class="numeros-resultados">
+                    <h3>Numeros</h3>
+                    <h2 class="numAnim" data-val="195">00</h2>
                 </div>
             </div>
-            <img src="img/us.jpg" alt="reception" id="reception">
-        </div> -->
-        <!-- <h2 id="special-h2">We Will Be Happy To Recive You</h2> -->
+        </div>
+        
         <div class="reservation">
             <h3>Contacta con nosotros</h3>
             <div class="reservation-text">
                 <p>+52 55 9049-6585</p>
                 <a href="Contacto.html">Contacto</a>
+                <p id="numwhats">+52 55 1969-5824</p>
+                <!-- Reemplazar!!!!!! -->
+                <a id="whatsappenlace"href="#"><img src="img/icons/whatsapp.png" alt="whatsapp"></a> 
             </div>
+
         </div>
     </main>
     <footer>
@@ -120,6 +142,36 @@
         </div>
     </footer>
     <!-- <script src="js/main.js"></script> -->
-    <script src="js/windChill.js"></script>
+    <script>
+        function numsanimation(){
+            let valueDisplay = document.querySelectorAll(".numAnim");
+            let interval = 2500;
+            valueDisplay.forEach(element => {
+                let startValue = 0;
+                let endValue = parseInt(element.getAttribute("data-val"));
+                let duration = Math.floor(interval / endValue);
+                let counter = setInterval(function () {
+                    startValue += 1;
+                    element.textContent = startValue;
+                    if(startValue == endValue) clearInterval(counter);
+                }, duration);
+            });
+        }
+        observer = new IntersectionObserver(entries => {
+            // Recorrer las entradas recibidas
+            entries.forEach(entry => {
+                // Está visible en el viewport
+                if (entry.intersectionRatio > 0) {
+                // entry.target es el elemento que se está observando
+                // Agregar la clase para animar
+                numsanimation();
+                observer.unobserve(entry.target);
+                }
+            });
+        });
+        // Observar elemento a animar
+        observer.observe(document.querySelector('.numAnim'));
+        
+    </script>
 </body>
 </html> 

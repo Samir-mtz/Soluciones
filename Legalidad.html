@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/general.css">
-    <title>Legalidad | Soluciones MEJGAR</title>
+    <title>Invierte | Soluciones MEJGAR</title>
 </head>
 <body>
     <header>
-         <!-- Menu -->
-         <div id="cell">
+        <!-- Menu -->
+        <div id="cell">
             <ul>
                 <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
                 <li><a href="https://samir-mtz.github.io/wdd230/Final%20proyect/">Home</a></li>
@@ -37,6 +37,116 @@
     <main>
         <div>
             <div>
+                <div id="beneficios">
+                    <h2>Beneficios</h2>
+                    <div id="contenido-beneficios">
+                        <div id="img-beneficio">
+                            <img src="img/banner3.jpg" alt="imagen prueba">
+                        </div>
+                        <div id="content-beneficios">
+                            <h3>Por que nosotros ...</h3>
+                            <p>Nuestros servicios no sólo incluyen la comercialización de cesiones, contamos con un servicio
+                                completo finalizando con la entrega de su garantía hipotecaria o bien, el pago con sus
+                                rendimientos de su inversión, de acuerdo con lo pactado. En el costo se incluyen los servicios
+                                jurídicos hasta el desalojo de su garantía, si es el caso.</p>
+                            <ul id="Listabeneficios">
+                                <li><img src="img/icons/correcto.png" alt="iconcheck"><b>Mejores proyectos de inversión del mercado</b></li>
+                                <li><img src="img/icons/correcto.png" alt="iconcheck"><b>Respaldo jurídico y transparencia</b></li>
+                                <li><img src="img/icons/correcto.png" alt="iconcheck"><b>Altos rendimientos de inversión, superiores a los del mercado.</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="proceso-invierte">
+                    <h2>Proceso de Negocio</h2>
+                    <div id="steps">
+                        <div class="step">
+                            <img src="img/icons/numero-1.png" alt="step1">
+                            <h3>Localización de activos</h3>
+                            <p>Seleccionamos de forma estrategica y analitica los mejores creditos del mercado segun su area geografica</p>
+                        </div>
+                        <div class="step">
+                            <img src="img/icons/numero-2.png" alt="step2">
+                            <h3>Evaluación financiera y juridica</h3>
+                            <p>Cada crédito pasa a manos del área administrativa y jurídica para el análisis de tiempo y viabilidad, y costos.</p>
+                        </div>
+                        <div class="step">
+                            <img src="img/icons/numero-3.png" alt="step3">
+                            <h3>Adquisición</h3>
+                            <p>Seleccionamos de forma estratégica y analítica los mejores créditos del mercado.</p>
+                        </div>
+                        <div class="step">
+                            <img src="img/icons/numero-4.png" alt="step4">
+                            <h3>Proceso judicial</h3>
+                            <p>Dependiendo de la etapa de juicio de cada crédito, continuamos con el proceso hasta llegar a término de adjudicación, siguiendo en cada paso los lineamientos legales.</p>
+                        </div>
+                        <div class="step">
+                            <img src="img/icons/numero-5.png" alt="step5">
+                            <h3>Recuperación</h3>
+                            <p>Recuperamos las garantías estipuladas en los contratos de apertura.</p>
+                        </div>
+                        <div class="step">
+                            <img src="img/icons/numero-6.png" alt="step6">
+                            <h3>Comercialización</h3>
+                            <p> Vendemos los inmuebles adjudicados o las cesiones de derecho por debajo de precio de mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="liquidacion">
+                    <h2>Liquida tu credito</h2>
+                    <div id="credito">
+                        <div id="div-img-credito">
+                            <img src="img/liquida.jpg" alt="imagen">
+                        </div>
+                        <div id="div-text-credito">
+                            <p>En nuestra cartera manejamos activos de administradoras como Adamantine, Patrimonio, Secorse, Banorte, Monesis, Pendulum, Zendere y Fina.</p>
+                            <!-- <p><b>Ubica tu crédito</b></p>
+                            <a href="Inmuebles.html" id="boton-liquidar">Buscar</a> -->
+                            
+                            <p id="liquida-desc">Si tu credito se encuentra con nosotros, haz click en el botón "Liquidar" para llenar el formulario de contacto
+                                y uno de nuestros asesores se comunicara contigo</p>
+                                <a href="Contacto.html" id="boton-liquidar">Liquidar</a>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div id="contenedor-inmuebles">
+                    <h2 id="title-preguntas">Consulta tu Credito</h2>
+                    <div id="filtro-inmuebles">
+                        <input type="text" id="inputBusqueda" placeholder="Busque por No. de credito o por nombre">
+                        <button onclick="realizarBusqueda()">Buscar</button>
+                    </div>
+                    
+                    <div id="lista-creditos">
+                        <ul id="listacreditos">
+                            <li class="Tecamac credito">
+                                <h3>No. 10125-2023</h3>
+                                <h4>Demandado: Jose Carlos Gomez</h4>
+                                <div class="generales-creditos">
+                                    <p>Entidad: Estado de México</p>
+                                    <p>Municipio: Tecamac</p>
+                                    <p>Calle: S/C</p>
+                                    <p>C.P. : 55070</p>
+                                    <a href="Contacto.html">Mas información</a>
+                                </div>
+                            </li>
+                            <li class="Tecamac credito">
+                                <h3>No. 10125-2023</h3>
+                                <h4>Demandado: Jose Carlos Gomez</h4>
+                                <div class="generales-creditos">
+                                    <p>Entidad: Estado de México</p>
+                                    <p>Municipio: Tecamac</p>
+                                    <p>C.P. : 55070</p>
+                                    <a href="Contacto.html">Mas información</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                        
+                    </div>
+                </div>
+
                 <h2 id="title-preguntas">Preguntas frecuentes</h2>
                 <div class="know-more">
                     <div id="div-preguntas">
@@ -48,7 +158,7 @@
                                 una institución bancaria, garantizada por un inmueble, el cual es adquirido al término del proceso
                                 judicial.</p>
                         </div>
-
+            
                         <div class="preguntas">
                             <div>
                                 <p class="pregunta" onclick="hideShow('ans2')"><span>¿Qué es una adjudicación?</span><span class="icono-mas">+</span></p>
@@ -63,7 +173,7 @@
                             </div>
                             <p class="answers" id="ans3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
                         </div>
-
+            
                         <div class="preguntas">
                             <div>
                                 <p class="pregunta" onclick="hideShow('ans4')"><span>Lorem ipsum dolor sit amet consectetur?</span><span class="icono-mas">+</span></p>
@@ -71,28 +181,13 @@
                             <p class="answers" id="ans4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque facilis, reiciendis facere quod praesentium nulla incidunt nobis unde voluptatem eligendi accusamus, voluptatibus odio iure maxime iste perferendis molestias ratione?</p>
                         </div> -->
                     </div>
-                    
-                    
+                </div>
+                <div>
+                    <h3>CONTACTANOS</h3>
+                    <h3>+52 55 4578-4568</h3>
                 </div>
 
-                <div id="liquidacion">
-                    <h2>Liquida tu credito</h2>
-                    <div id="credito">
-                        <div id="div-img-credito">
-                            <img src="img/banner.jpg" alt="imagen">
-                        </div>
-                        <div id="div-text-credito">
-                            <p>En nuestra cartera manejamos activos de administradoras como Adamantine, Patrimonio, Secorse, Banorte, Monesis, Pendulum, Zendere y Fina.</p>
-                            <p><b>Ubica tu crédito</b></p>
-                            <a href="Inmuebles.html" id="boton-liquidar">Buscar</a>
-                            
-                            <p id="liquida-desc">Si tu credito se encuentra con nosotros, haz click en el botón "Liquidar" para llenar el formulario de contacto
-                            y uno de nuestros asesores se comunicara contigo</p>
-                            <a href="Contacto.html" id="boton-liquidar">Liquidar</a>
-                        </div>
-                    </div>
-                    
-                </div>
+            
             </div>
         </div>
     </main>
@@ -100,19 +195,17 @@
         <img src="img/logo.jpg" alt="logo" class="logo-footer"/>    
         <div>
             <p>©Copyright 2023 Soluciones Inmobiliarias MEJGAR</p>
-            <!-- <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a> -->
         </div>
         <div id="social-footer">
             <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
             <a href="https://www.instagram.com/inmobiliaria_mejgar/?fbclid=IwAR0FiiDsgBpUFSW52cyfeUbxVTbr53i-Ee2EuTK4NYseFJsk9Zw6_5hAgWk" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
-            <!-- <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a> -->
         </div>
     </footer>
     <script src="js/main.js"></script>
     <script>
         function hideShow(id){
             let ans = document.getElementById(id).style.display;
-            // console.log(ans);
+            
             if(ans=="flex"){
                 document.getElementById(id).style.display="none";
             }else{
