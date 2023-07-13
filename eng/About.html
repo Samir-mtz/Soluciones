@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/general.css">
-    <title>About us | Soluciones MEJGAR</title>
+    <title>About | Soluciones MEJGAR</title>
 </head>
 <body>
     <header>
@@ -14,11 +14,9 @@
         <div id="cell">
             <ul>
                 <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
-                <li><a href="/">Home</a></li>
-                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
-                <li><a href="Legalidad.html">Legality</a></li>
-                <li><a href="Invierte.html">Invest</a></li>
-                <li><a href="Contacto.html">Contact</a></li>
+                <li><a href="https://samir-mtz.github.io/wdd230/Final%20proyect/">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </div>
         <!-- End Menu -->
@@ -26,48 +24,95 @@
             <img src="img/logo.jpg" alt="logo" />
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
-                <li><a href="Legalidad.html">Legality</a></li>
+                <!-- <li><a href="Inmuebles.html">Lista de Inmuebles</a></li>
+                <li><a href="Legalidad.html">Legalidad</a></li> -->
                 <li><a href="Invierte.html">Invest</a></li>
+                <!-- <li><a href="Inmuebles.html">Inmuebles</a></li> -->
                 <li><a href="Contacto.html">Contact</a></li>
-                <li id="eng-enlace"><a href="/Soluciones">ESP</a><img src="img/icons/mexico.jpg" alt="usa" width="22px"></li>
+                <li id="eng-enlace"><a href="eng/">ESP</a><img src="img/icons/mexico.jpg" alt="usa" width="22px"></li>
                 <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
             </ul>
         </nav>
         <h1 class="movimiento-titulo">ABOUT US</h1>
     </header>
     <main>
+        <div id="description">
+            <!-- <div id="quienessomos">
+                <div id="textoquienes">
+                    <h2>¿Quienes somos?</h2>
+                    <p id="quien">Somos una empresa que se dedica a desarrollar negocios a través de la venta de cesiones de
+                        derechos litigiosos, adjudicatarios y venta de inmuebles; trabajando directamente con las
+                        instituciones financieras y empresas inmobiliarias.</p>
+                </div>
+                <img src="img/inicio-us.jpg" alt="venta">
+            </div> -->
+            <div id="filotitle">
+                <h2 id="filosofia">Philosophy</h2>
+            </div>
+            <div id="mision">
+                <img src="img/icons/mision.png" alt="mision">
+                <h3>Mision</h3>
+                <p>Provide trustworthy experience taking care of our clients’ assets, maximizing their investments</p>
+                </div>
+            <div id="vision">
+                <img src="img/icons/vision.png" alt="vision">
+                <h3>Vision</h3>
+                <p>Become the best option for out clients, with the best business proposals in the market of investments with highly attractive profits</p>
+            </div>
+        </div>
+        <div id="valores">
+            <h2>Our values</h2>
+            <div>
+                <div class="valor">
+                    <img src="img/icons/transparencia.png" alt="Valor1">
+                    <h3>Transparency</h3>
+                </div>
+                <div class="valor">
+                    <img src="img/icons/seguridad.png" alt="Valor2">
+                    <h3>Security</h3>
+                </div>
+                <div class="valor">
+                    <img src="img/icons/handshake.png" alt="Valor3">
+                    <h3>Commitment</h3>
+                </div>
+                <div class="valor">
+                    <img src="img/icons/integridad.png" alt="Valor4">
+                    <h3>Integrity</h3>
+                </div>
+                <div class="valor">
+                    <img src="img/icons/responsabilidad.png" alt="Valor4">
+                    <h3>Responsibility</h3>
+                </div>
+            </div>
+        </div>
         <div>
-            <h2 class="title-negocio">Business lines</h2>
+            <!-- <h2 class="title-negocio">Lineas de negocio</h2>
             <div>
                 <div class="lineas-negocio">
                     <div>
                         <img src="img/administracion.jpg" alt="administracion">
                     </div>
                     <div class="texto-negocio">
-                        <h3>Recovery service</h3>
-                        <p>Recovery of portfolio of financial assets in the form of assignments of litigious rights
-                            and adjudicators, we bring the judicial process to the final stage, and we take possession of the
-                            properties.</p>
-                        <h3>Administration and sale of actives</h3>
-                        <p>we value, prepare and buy the best actives of the principal portfolio
-                            administrators in the country.</p>
+                        <h3>Servicio de recuperación</h3>
+                        <p>Recuperación de cartera de activos financieros en forma de cesiones de derechos litigiosos y adjudicatarios, llevamos el proceso judicial hasta el termino y tomamos la posesión de los inmuebles.</p>
+                        <h3>Administración y venta de activos</h3>
+                        <p>Evaluamos, armamos y compramos los mejores activos de las principales administradoras del país.</p>
                     </div>
                 </div>
                 <div class="lineas-negocio">
                     <div class="texto-negocio">
-                        <h3>Investment</h3>
-                        <p>We offer the best profits and the fastest return of investment in the market.</p>
-                        <h3>Main administration</h3>
-                        <p>Recuperation of massive portfolio, valuation and acquisition of portfolio</p>
-                        <h3>Commercialization of portfolio</h3>
-                        <p>Sale of real estate and services related to it.</p>
+                        <h3>Inversión</h3>
+                        <p>Ofrecemos los mejores rendimientos y tiempo de retorno del mercado.</p>
+                        <h3>Administración primaria</h3>
+                        <p>Recuperación de cartera masiva, valuación y adquisición de portafolio.</p>
+                        <h3>Comercialización de cartera</h3>
+                        <p>Ventas y servicios de bienes inmuebles adjudicados.</p>
                     </div>
                     <div>
                         <img src="img/comercialización.jpg" alt="comercialización">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div id="resultados">
                 <h2 class="title-negocio">Resultados</h2>   
                 <div id="resultados-numeros">
@@ -91,7 +136,7 @@
             </div> -->
 
             <div id="cobertura">
-                <h2 class="title-negocio">Coverage</h2>   
+                <h2 id="title-cobertura">Coverage</h2>   
                 <div id="contenedor-mapas">
                     <div class="mapas">
                         <h3>Estado de México</h3>
@@ -120,7 +165,17 @@
                 </div>
                 
             </div>
-            
+            <div class="reservation2">
+                <h3>Contact with us</h3>
+                <div class="reservation-text">
+                    <p>+52 55 9049-6585</p>
+                    <a href="Contacto.html">Contact</a>
+                    <p id="numwhats">+52 55 1969-5824</p>
+                    <!-- Reemplazar!!!!!! -->
+                    <a id="whatsappenlace"href="#"><img src="img/icons/whatsapp.png" alt="whatsapp"></a> 
+                </div>
+    
+            </div>
         </div>
     </main>
     <footer>

@@ -23,7 +23,9 @@ header {
     background-size: cover;
     background-attachment: fixed;
 }
-
+p{
+    font-size: 20px;
+}
 /*Navegeacion*/
 nav {
     display: flex;
@@ -107,20 +109,34 @@ main {
 /*description*/
 #quien{
     margin-left: 50px;
-    width: 72%;
+    /* width: 72%; */
     padding-bottom: 30px;
+    text-align: justify;
+    padding: 20px;
 }
 #description{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 #description h2{
-    width: 100%;
+    /* width: 100%; */
     font-size: 35px;
+    color: #457B9D;
+    /* border-bottom: 3px solid rgb(18, 113, 151); */
 }
+#filotitle{
+    width: 100% !important;
+    margin-top: 50px;
+}
+#mision{
+    margin-bottom:50px;
+}
+#vision{
+    padding-bottom:50px;
+} 
 #description div{
     display: flex;
     flex-direction: column;
@@ -139,6 +155,24 @@ main {
     padding-bottom: 10px;
 }
 
+#quienessomos{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    padding-top: 6% !important;
+    padding-bottom: 8% !important;
+    /* width: 100% !important;  */
+    background:  linear-gradient(to right, rgba(29, 53, 87, 1), rgba(69, 70, 70, 0.2));
+    align-items: center;
+    color: #1D3557;
+
+}
+
+#quienessomos img{
+    width: 45% !important;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
+    /* border-radius: 50px 0 50px 0; */
+}
 #exit{
     margin-left:95%;
     margin-top:1%;
@@ -152,6 +186,10 @@ main {
 #exit img{
     width:100%;
 }
+#textoquienes{
+    width: 700px !important;
+    color: #fff;
+}
 
 /*end description*/
 
@@ -159,11 +197,13 @@ main {
 #valores{
     padding-top: 5%;
     padding-bottom: 8%;
+    width: 100%;
     background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)),  url("../img/valores.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url("../img/valores.jpg");
 }
 #valores h2{
     margin: 0 auto;
+    color:#fff;
     width: 350px;
     border-bottom: 3px solid rgb(18, 113, 151);
     font-size: 35px;
@@ -244,7 +284,7 @@ main {
     margin-bottom: 0;
 }
 .reservation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/banner4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/contacto3.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 40vh;
@@ -252,8 +292,47 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
+}
+.reservation1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/contacto1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.reservation2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/contacto4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 .reservation h3{
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    font-size: 35px;
+    color:#fff;
+    text-shadow: 1px 1px 2px black;
+}
+.reservation1 h3{
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    font-size: 35px;
+    color:#fff;
+    text-shadow: 1px 1px 2px black;
+}
+.reservation2 h3{
     text-align: center;
     align-self: center;
     width: 100%;
@@ -264,9 +343,17 @@ main {
 .reservation-text{
     display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items:center;
 }
 .reservation-text a{
+    padding: 10px;
+    background-color: #EC9A9A;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.contactboton{
     padding: 10px;
     background-color: #EC9A9A;
     color:#fff;
@@ -284,6 +371,15 @@ main {
     padding-right: 20px;
     text-shadow: 1px 1px 2px black;
 
+}
+.reservation-text img{
+    width: 55px;
+}
+#numwhats{
+    padding-left: 20px;
+}
+#whatsappenlace{
+    background-color: transparent !important;
 }
 /*end Contacto*/
 
@@ -366,6 +462,10 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/banner1.jpg");
     background-size: cover;
 }
+#proceso-invierte{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("../img/banner2.jpg");
+    background-size: cover;
+}
 #proceso-invierte h2{
     padding-top: 5%;
     color:#1D3557;
@@ -374,23 +474,41 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 8%;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
-.step:nth-child(even){
-    background-color: rgba(79, 179, 247, 0.3); 
+.step:nth-child(2){
+    margin-top: 40px;
 }
+.step:nth-child(3){
+    margin-top: 80px;
+}
+.step:nth-child(4){
+    margin-top: 120px;
+}
+.step:nth-child(5){
+    margin-top: 160px;
+}
+.step:nth-child(6){
+    margin-top: 200px;
+}
+.step:nth-child(odd){
+    background-color: rgba(29, 139, 212, 0.7); 
+    color: #fff;
+    font-weight: bold;
+}
+
 .step{
     width: 250px;
-    height: 300px;
+    height: 420px;
     text-align: center;
     padding:15px;
     border-radius: 5px;
     border-left-color:black;
-    
+    background-color: #ffffffe4;
 }
 .step:hover{
     background-color: #1D3557;
-    color:#fff;
+    color:#fff !important;
 }
 .step img{
     width: 55px;
@@ -404,6 +522,7 @@ main {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: justify;
+    /* color: #000; */
     /* font-size: ; */
 }
 #beneficios{
@@ -635,7 +754,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 #div-text-credito{
     width: 50%;
-    text-align: center;
+    text-align: justify;
 }
 #div-text-credito h3{
     font-size: 25px;
@@ -653,6 +772,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 #credito div img{
     width: 100%;
     margin: 0 auto;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0 30px 0 30px;
 }
 #boton-liquidar{
     margin-top: 10px;
@@ -697,16 +818,98 @@ footer {
 /*end footer*/
 /*Nosotros*/
 #cobertura{ 
-    background-color: rgb(244, 244, 244); 
+    /* background-color: rgb(244, 244, 244);  */
+}
+#title-cobertura{
+    color: #3996d0;
+    padding-top: 50px;
+}
+#linea-recuperacion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/recuperacion.jpg");
+    background-size: cover;
+    height: 450px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#linea-recuperacion div{
+    background-color: #003972;
+    color:#fff;
+}
+#linea-administracion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/primaria.jpg");
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 8px 10px 5px;
+}
+#linea-administracion div{
+    background-color: #2a2a2ae6;
+    color:#fff;
+}
+#linea-inversion{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/inversion.jpg"); */
+    /* background-color: #003972; */
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#linea-inversion div{
+    background-color: #003972;
+    color:#fff;
+}
+#linea-primaria{
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/primaria.jpg"); */
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#linea-primaria div{
+    background-color: #003972;
+    color:#fff;
+}
+
+#linea-comercializacion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/comercializacion.jpg");
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 8px 10px 5px;
+}
+#linea-comercializacion div{
+    background-color: #2a2a2ae6;
+    color:#fff;
+}
+.negocio-title{
+    color: #457B9D;
+    padding-top: 50px;
 }
 .title-negocio{
     padding-top: 3%;
-    color: #457B9D;
+    color: #fff;
 }
 .lineas-negocio{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 5px;
+}
+.linea-padding{
+    padding-bottom: 50px;
 }
 .lineas-negocio div{
     padding:20px;
@@ -762,17 +965,23 @@ footer {
     padding-top: 15px;
 }
 #resultados{
-    background-color: #003972;
+    background-color: #1D3557;
+    height: 200px;
+}
+#numerostexto{
+    margin-top: -180px;
+    margin-bottom: 30px;
 }
 .numeros-resultados{
     text-align: center;
     padding: 15px;
     width: 240px;
     height: 130px;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
     margin-left: 20px;
     margin-right: 20px;
+    /* border: 1px solid #949494; */
 }
 
 /*End Nosotros*/
@@ -802,12 +1011,12 @@ footer {
 }
 #filtro-inmuebles button{
     width: 100px;
+    height: 30px;
     background-color: #003972;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
 }
-
 
 #lista-creditos{
     width: 70%;
@@ -829,6 +1038,10 @@ footer {
 #lista-creditos ul li h3{
     padding: 10px;
 }
+#lista-creditos ul li h4{
+    padding: 10px;
+    font-size: 20px;
+}
 .generales-creditos{
     display: flex;
     flex-wrap: wrap;
@@ -841,9 +1054,25 @@ footer {
 .credito{
     display: block;
 }
+#inputBusqueda{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+
+}
 
 /*End Lista de inmuebles*/
-
+/* Banner de contacto*/
+#bannercontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url("../img/banner6.jpg");
+}
+#bannercontacto h3{
+    padding: 30px;
+}
+/*End Banner de contacto*/
 @media (max-width:32.5rem){
     #contacto{
         height:80vh;

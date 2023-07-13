@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/general.css">
     <title>Legalidad | Soluciones MEJGAR</title>
 </head>
-<body>
+<body onload="DesplegarCreditos()">
     <header>
         <!-- Menu -->
         <div id="cell">
@@ -31,7 +31,7 @@
                 <li><a href="Legalidad.html">Legalidad</a></li>
                 <li><a href="Invierte.html">Invierte</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
-                <li id="eng-enlace"><a href="/Soluciones">ESP</a><img src="img/icons/mexico.jpg" alt="usa" width="22px"></li>
+                <li id="eng-enlace"><a href="eng/">ENG</a><img src="img/icons/usa.jpg" alt="usa" width="22px"></li>
                 <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
             </ul>
         </nav>
@@ -42,52 +42,52 @@
             <div id="contenedor-inmuebles">
                 <h2 id="title-preguntas">Consulta tu Credito</h2>
                 <div id="filtro-inmuebles">
-                    <select name="" id="filtro">
-                        <option value="Filtro">Filtrar por municipio</option>
-                        <option value="Ecatepec">Ecatepec</option>
-                        <option value="Tecamac">Tecamac</option>
-                    </select>
-                    <button id="borrarFiltro">Borrar filtro</button>
+                    <input type="text" id="inputBusqueda" placeholder="Busque por No. de credito o por nombre">
+                    <button onclick="realizarBusqueda()">Buscar</button>
                 </div>
                 
                 <div id="lista-creditos">
                     <ul id="listacreditos">
-                        <li class="Ecatepec credito">
+                        <!-- <li class="Ecatepec credito">
                             <h3>No. 10125-2023</h3>
+                            <h4>Demandado: Jose Carlos Gomez</h4>
                             <div class="generales-creditos">
                                 <p>Entidad: Estado de México</p>
                                 <p>Municipio: Ecatepec</p>
                                 <p>C.P. : 55070</p>
-                                <a href="Contacto.html">Contactanos</a>
+                                <a href="Contacto.html">Mas información</a>
                             </div>
                         </li>
                         <li class="Tecamac credito">
                             <h3>No. 10125-2023</h3>
+                            <h4>Demandado: Jose Carlos Gomez</h4>
                             <div class="generales-creditos">
                                 <p>Entidad: Estado de México</p>
                                 <p>Municipio: Tecamac</p>
                                 <p>C.P. : 55070</p>
-                                <a href="Contacto.html">Contactanos</a>
+                                <a href="Contacto.html">Mas información</a>
                             </div>
                         </li>
                         <li class="Tecamac credito">
                             <h3>No. 10125-2023</h3>
+                            <h4>Demandado: Jose Carlos Gomez</h4>
                             <div class="generales-creditos">
                                 <p>Entidad: Estado de México</p>
                                 <p>Municipio: Tecamac</p>
                                 <p>C.P. : 55070</p>
-                                <a href="Contacto.html">Contactanos</a>
+                                <a href="Contacto.html">Mas información</a>
                             </div>
                         </li>
                         <li class="Ecatepec credito">
                             <h3>No. 10125-2023</h3>
+                            <h4>Demandado: Jose Carlos Gomez</h4>
                             <div class="generales-creditos">
                                 <p>Entidad: Estado de México</p>
                                 <p>Municipio: Ecatepec</p>
                                 <p>C.P. : 55070</p>
-                                <a href="Contacto.html">Contactanos</a>
+                                <a href="Contacto.html">Mas información</a>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                     
@@ -110,28 +110,54 @@
     </footer>
     <script src="js/main.js"></script>
     <script>
-        var activities = document.getElementById("filtro");
-        activities.addEventListener("change", function() {
-            var option = activities[activities.selectedIndex].value;
-            let lista = document.querySelectorAll(".credito");
-            if(option !== "Filtro"){
-                lista.forEach(credito => {
-                if(credito.className !== option+" credito"){
-                    credito.style.display = "none";
-                }else{
-                    credito.style.display = "block";
+        // var activities = document.getElementById("filtro");
+        // activities.addEventListener("change", function() {
+        //     var option = activities[activities.selectedIndex].value;
+        //     let lista = document.querySelectorAll(".credito");
+        //     if(option !== "Filtro"){
+        //         lista.forEach(credito => {
+        //         if(credito.className !== option+" credito"){
+        //             credito.style.display = "none";
+        //         }else{
+        //             credito.style.display = "block";
+        //         }
+        //     });
+        //     }
+        // });
+        // let borrarFiltro = document.getElementById("borrarFiltro");
+        // borrarFiltro.addEventListener("click",function(){
+        //     let lista = document.querySelectorAll(".credito");
+        //     lista.forEach(credito => {
+        //         credito.style.display = "block";
+        //     });
+        //     activities.options.item(0).selected = 'Filtro';
+        // });
+        function realizarBusqueda() {
+            let input = document.getElementById('inputBusqueda').value;
+            let url = 'buscar.php?busqueda=' + encodeURIComponent(input);
+            
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('listacreditos').innerHTML = this.responseText;
                 }
-            });
-            }
-        });
-        let borrarFiltro = document.getElementById("borrarFiltro");
-        borrarFiltro.addEventListener("click",function(){
-            let lista = document.querySelectorAll(".credito");
-            lista.forEach(credito => {
-                credito.style.display = "block";
-            });
-            activities.options.item(0).selected = 'Filtro';
-        });
+            };
+            xmlhttp.open('GET', url, true);
+            xmlhttp.send();
+        }
+        function DesplegarCreditos() {
+            let url = 'inmuebles.php';
+            
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('listacreditos').innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open('GET', url, true);
+            xmlhttp.send();
+        }
+
     </script>
 </body>
 </html>

@@ -109,15 +109,17 @@ main {
 /*description*/
 #quien{
     margin-left: 50px;
-    width: 72%;
+    /* width: 72%; */
     padding-bottom: 30px;
+    text-align: justify;
+    padding: 20px;
 }
 #description{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* padding-top: 3%;
-    padding-bottom: 2%; */
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 #description h2{
     /* width: 100%; */
@@ -127,11 +129,14 @@ main {
 }
 #filotitle{
     width: 100% !important;
-
+    margin-top: 50px;
 }
-#filosofia{
-
+#mision{
+    margin-bottom:50px;
 }
+#vision{
+    padding-bottom:50px;
+} 
 #description div{
     display: flex;
     flex-direction: column;
@@ -156,15 +161,17 @@ main {
     justify-content: space-evenly !important;
     padding-top: 6% !important;
     padding-bottom: 8% !important;
-    width: 100% !important;
-    background-color: rgb(248, 248, 248);
+    /* width: 100% !important;  */
+    background:  linear-gradient(to right, rgba(29, 53, 87, 1), rgba(69, 70, 70, 0.2));
+    align-items: center;
+    color: #1D3557;
 
 }
 
 #quienessomos img{
     width: 45% !important;
     box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 50px 0 50px 0;
+    /* border-radius: 50px 0 50px 0; */
 }
 #exit{
     margin-left:95%;
@@ -181,6 +188,7 @@ main {
 }
 #textoquienes{
     width: 700px !important;
+    color: #fff;
 }
 
 /*end description*/
@@ -191,10 +199,11 @@ main {
     padding-bottom: 8%;
     width: 100%;
     background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)),  url("../img/valores.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url("../img/valores.jpg");
 }
 #valores h2{
     margin: 0 auto;
+    color:#fff;
     width: 350px;
     border-bottom: 3px solid rgb(18, 113, 151);
     font-size: 35px;
@@ -809,7 +818,11 @@ footer {
 /*end footer*/
 /*Nosotros*/
 #cobertura{ 
-    background-color: rgb(244, 244, 244); 
+    /* background-color: rgb(244, 244, 244);  */
+}
+#title-cobertura{
+    color: #3996d0;
+    padding-top: 50px;
 }
 #linea-recuperacion{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),  url("../img/recuperacion.jpg");
