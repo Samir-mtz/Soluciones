@@ -1073,7 +1073,7 @@ footer {
     padding: 30px;
 }
 /*End Banner de contacto*/
-@media (max-width:32.5rem){
+@media (max-width:32.5rem){ 
     #contacto{
         height:80vh;
         grid-template-columns: 100%;
@@ -1106,7 +1106,8 @@ footer {
         display:inline;
         width:30%;
         justify-self: end;
-        margin-left:50%;
+        margin-left:80%;
+        margin-top: -80px;
         background: transparent;
         border:none;
     }
@@ -1138,8 +1139,8 @@ footer {
         border: none;
     }
     #exit{
-        margin-left:-80%;
-        margin-top:5%;
+        margin-left:8%;
+        /* margin-top:1%; */
         width:12%;
     }
     #exit img{
@@ -1154,49 +1155,68 @@ footer {
     }
 
     /*home*/
-    #temple-description img{
-        width: 50%;
+    #quienessomos{
+        display: block !important;
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient(to right, rgba(29, 53, 87, 1), rgba(69, 70, 70, 0.8));
     }
-    #right-side-temple{
+    #textoquienes{
+        width: 100% !important;
         text-align: center;
     }
-    #descripcion-text div{
-        padding-right: 0;
-    }
-    #weather{
-        height: auto;
-    }
-    #reception{
-        width: 50%;
+    #quienessomos img{
+        display: block;
+        width: 90% !important;
         margin: 0 auto;
     }
-    #about-us div{
-        width: 90%;
+    #quien{
+        margin-left: 1px;
+        margin: 0px;
+        /* width: 90%; */
+        padding-bottom: 30px;
+        text-align: justify;
+        padding: 10px;
     }
-    #about-us h3{
-        font-size: 25px;
-        padding-bottom: 15px;
+
+    #linea-recuperacion{
+        height: auto;
     }
-    #about-us{
-        display: inline-block;
+    .lineas-negocio-min{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #linea-inversion{
+        height: auto;
+    }
+    #linea-primaria{
+        height: auto;
+    }
+    .lineas-negocio div{
+        padding: 15px;
+    }
+    #resultados-numeros{
+        display: block;
+    }
+    .numeros-resultados{
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #e7e7e7;
+    }
+    .reservation-text{
+        display: block;
+        margin: 0 auto;
         text-align: center;
     }
-    .logo-footer{
-        width: 40%;
+    .reservation-text p{
+        padding: 20px;
+    }
+    .reservation{
+        background-size:600px;
+        background-attachment: scroll;
     }
     /*end home*/
-    /*temple*/
-    #salir img{
-        width:100%;
-    }
-    #salir{
-        margin-top:3%;
-        width:100%;
-    }
-    .sale-container{
-        width: 380px;
-    }
-    /*end temple*/
+    
     /*services*/
     .know-more{
         display: block;
@@ -1217,6 +1237,88 @@ footer {
     #social-footer{
         margin-top: 10px;
     }
+    /*Invierte*/
+    #contenido-beneficios{
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #img-beneficio{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    #content-beneficios{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #steps{
+        display: block;
+    }
+    .step{
+        margin: 0 auto;
+    }
+    #proceso-invierte{
+        background-color:#fff;
+        background-image: none;
+    }
+    .step:nth-child(odd){
+        background-color: #003972 !important;
+    }
+    .step:nth-child(even){
+        background-color: #d3d3d3 !important;
+    }
+    .step:nth-child(2) {
+        margin-top: 20px;
+    }
+    .step:nth-child(3) {
+        margin-top: 20px;
+    }
+    .step:nth-child(4) {
+        margin-top: 20px;
+    }
+    .step:nth-child(5) {
+        margin-top: 20px;
+    }
+    .step:nth-child(6) {
+        margin-top: 20px;
+    }
+    #credito{
+        display: block;
+    }
+    
+    #div-img-credito{
+        width: auto;
+    }
+    #div-text-credito{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    #boton-liquidar{
+        display: block;
+        margin: 0 auto;
+    }
+    #credito div img{
+        width: 350px;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    #filtro-inmuebles{
+        width: 70%;
+    }
+    #lista-creditos {
+        width: 90%;
+    }
+    .preguntas{
+        width: 100%;
+    }
+    .icono-mas{
+        padding-left: 25px;
+        padding-top: 10px;
+    }
+    /*End Invierte*/
 }
 
 @Keyframes subir{
